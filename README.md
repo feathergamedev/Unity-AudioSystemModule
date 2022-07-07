@@ -1,11 +1,11 @@
 # UnityModule-AudioObjectPool
 Implement an easy-to-use audio player module with object pool and Resources API
 
-# 程式碼說明
+## 程式碼說明
 供Unity專案使用的簡易音效播放模組，出自我個人維護的FeatherTemplate。
 兼顧方便性與效能，適用於Prototype、Game Jam等小規模產品，待專案音效運作流程確定後再進行改版。
 
-# 特色
+## 特色
 
 1.操作簡單，只需要維護音效類型(Enum)、音效檔案(AudioClip)之間的對照表
 
@@ -15,7 +15,7 @@ Implement an easy-to-use audio player module with object pool and Resources API
 
 4.可以按照不同Scene的需求，把AudioClipTable拆成很多個，只載入當下需要使用到的AudioClip資源
 
-# 操作流程
+## 操作流程
 
 1.在Resources建一個AudioClipTable (ScriptableObject)
 
@@ -27,7 +27,7 @@ Implement an easy-to-use audio player module with object pool and Resources API
 
 5.回收已播放完畢的AudioSource
 
-# 可優化方向
+## 可優化方向
 
 1.棄用Resources流程，改成用Addressable Group建立AudioClip的參考。
 
